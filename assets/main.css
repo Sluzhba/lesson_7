@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back {
+    position: relative;
+    background-color: aqua;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.back__head {
+    background: linear-gradient(to bottom, blue 70%, rgb(209, 209, 13) 30%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90px;
+    position: fixed;
+    margin-left: 30%;
+    z-index: 1;
+}
+
+.back__frame {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1400px;
+}
+
+.back__article {
+    border: 10px dotted green;
+    background-color: bisque;
+    display: inline-block;
+    width: 600px;
+    height: auto;
+    font-size: 2em;
+    overflow: auto;
+    position: fixed;
+}
+
+.back__article--first {
+    position: absolute;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    top: 250px;
+    left: 1000px;
+}
+
+.back__article--second {
+    position: absolute;
+    display: block;
+    left: 70%;
+    top:20%;
+    border: 10px dotted red;
+    overflow: scroll;
+    height: 1000px;
+}
+
+.back__article__memo {
+    font-weight: 400;
+    font-style: italic;
+    color: blue;
+    display: inherit;
+    margin: 0 90px;
+    width: 130px;
+    float: left;
+    padding: 10px;
+}
+
+
+.back__frame__auto {
+    background-color: transparent;
+    border: 5px solid black;
+    box-sizing: content-box;
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    width: 700px;
+    height: 800px;
+}
+
+.back__frame__auto__main  {
+    background-color: green;
+    border: 1px solid black;
+    position: relative;
+    bottom: -350px;
+    left: 100px;
+    width: 500px;
+    height: 300px;
+}
+
+.back__frame__auto__cabin  {
+    background-color: green;
+    border: 1px solid black;
+    box-sizing: content-box;
+    position: relative;   
+    top: -151px;
+    left: 351px;
+    width: 246px;
+    height: 201px;    
+}
+
+.back__frame__auto__cabin__window  {
+    background-color: white;
+    border: 2px solid black;
+    position: static;   
+    margin: 20px 10px;
+    display: block;
+    width: 100px;
+    height: calc(100% - 40px);    
+}
+
+.back__frame__auto__wheel  {
+    background-color: yellow;
+    border: 45px solid black;
+    border-radius: 50%;
+    position: relative;   
+    width: 300px;
+    height: 300px;    
+}
+
+.back__frame__auto__wheel--small  {
+    width: 250px;
+    height: 250px;  
+    left: 20px;  
+}
+
+.back__frame__auto__wheel--big  {
+    border: 55px solid black;
+    width: 350px;
+    height: 350px;  
+    right: -320px;;  
+    top: -350px;
+}
+
+.back__frame__auto__pipe  {
+    background-color: grey;
+    border: 1px solid black;
+    position: absolute;   
+    float: left;
+    width: 50px;
+    height: 200px; 
+    left: 150px;
+    top: 151px;
+}
+
+.back__frame__tank {
+    background-color: transparent;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;   
+    width: 1000px;
+    height: 600px; 
+    margin-left: 1000px;
+    margin-top: 680px;
+}
+
+.back__frame__tank__main {
+    background-color: brown;
+    border: 30px solid black;
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 50px;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+}
+
+.back__frame__tank__cabin  {
+    background-color: yellow;
+    border: 20px solid black;
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 300px;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 20%;   
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 20%;
+    z-index: 1;
+}
+
+.back__frame__tank__turret {
+    background-color: yellow;
+    border: 10px solid black;
+    position: relative;
+    width: 350px;
+    height: 80px;
+    top: 100px;
+    left: 30px;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    z-index: 0;
+}
+.back__text {
+    position: absolute;
+    background: aqua; 
+    width: 100vw;   
+}
+.back__text__head {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    position: sticky;  
+    top:0;
+    background: transparent;    
+    padding-left: 40%;
+    color: blue;
+}
+
+.back__text__paragraph--nofloat,.back__text__paragraph {
+    font-size: 2.5em;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+}
+
+.back__text__paragraph__img--nofloat,.back__text__paragraph__img {
+    margin: 7px 7px 7px 0;
+    width: 800px;
+    height: 600px;
+}
+.back__text__paragraph__img {
+    float: left;
+}
+.back__text__paragraph--nofloat,.back__text__paragraph__img--nofloat {
+    clear: both;
+}
+
+.cotton-style {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.cotton-style::after {
+    content: "💮";
+    font-size: smaller;
+    font-weight: 300;
+    color: red;
+}
+
+.back__about {
+    font-size: 30px;
+    display: inline-block;
+    width: 700px;
+    border: 5px solid black;
+}
