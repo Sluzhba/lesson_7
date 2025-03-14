@@ -12,7 +12,7 @@
     z-index: -1;
 }
 
-.back__head {
+.head {
     background: linear-gradient(to bottom, blue 70%, rgb(209, 209, 13) 30%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -24,14 +24,14 @@
     z-index: 1;
 }
 
-.back__frame {
+.frame {
     position: relative;
     display: block;
     width: 100%;
     height: 1500px;
 }
 
-.back__article {
+.article {
     border: 10px dotted green;
     background-color: bisque;
     display: inline-block;
@@ -42,7 +42,7 @@
     position: fixed;
 }
 
-.back__article--first {
+.article--rotate {
     position: absolute;
     transform: rotate(15deg);
     -webkit-transform: rotate(15deg);
@@ -53,7 +53,7 @@
     left: 500px;
 }
 
-.back__article--second {
+.article--autoheight {
     position: absolute;
     display: block;
     left: 65%;
@@ -63,7 +63,7 @@
     height: 600px;
 }
 
-.back__article__memo {
+.article__memo {
     font-weight: 400;
     font-style: italic;
     color: blue;
@@ -75,7 +75,7 @@
 }
 
 
-.back__frame__auto {
+.auto {
     background-color: transparent;
     border: 5px solid black;
     box-sizing: content-box;
@@ -86,7 +86,7 @@
     height: 700px;
 }
 
-.back__frame__auto__main  {
+.auto__main  {
     background-color: green;
     border: 1px solid black;
     position: relative;
@@ -96,7 +96,7 @@
     height: 300px;
 }
 
-.back__frame__auto__cabin  {
+.auto__cabin  {
     background-color: green;
     border: 1px solid black;
     box-sizing: content-box;
@@ -107,7 +107,7 @@
     height: 201px;    
 }
 
-.back__frame__auto__cabin__window  {
+.auto__cabinwindow  {
     background-color: white;
     border: 2px solid black;
     position: static;   
@@ -117,7 +117,7 @@
     height: calc(100% - 40px);    
 }
 
-.back__frame__auto__wheel  {
+.auto__wheel  {
     background-color: yellow;
     border: 45px solid black;
     border-radius: 50%;
@@ -126,13 +126,13 @@
     height: 200px;    
 }
 
-.back__frame__auto__wheel--small  {
+.auto__wheel--small  {
     width: 200px;
     height: 200px;  
     left: 10px;  
 }
 
-.back__frame__auto__wheel--big  {
+.auto__wheel--big  {
     border: 55px solid black;
     width: 300px;
     height: 300px;  
@@ -140,7 +140,7 @@
     top: -300px;
 }
 
-.back__frame__auto__pipe  {
+.auto__pipe  {
     background-color: grey;
     border: 1px solid black;
     position: absolute;   
@@ -151,7 +151,7 @@
     top: 151px;
 }
 
-.back__frame__tank {
+.tank {
     background-color: transparent;
     border: 1px solid black;
     display: inline-block;
@@ -162,7 +162,7 @@
     margin-top: 1000px;
 }
 
-.back__frame__tank__main {
+.tank__main {
     background-color: brown;
     border: 25px solid black;
     position: absolute;
@@ -177,7 +177,7 @@
     -o-border-radius: 30%;
 }
 
-.back__frame__tank__cabin  {
+.tank__cabin  {
     background-color: yellow;
     border: 15px solid black;
     position: absolute;
@@ -192,7 +192,7 @@
     z-index: 1;
 }
 
-.back__frame__tank__turret {
+.tank__turret {
     background-color: yellow;
     border: 10px solid black;
     position: relative;
@@ -204,12 +204,12 @@
     border-bottom-left-radius: 20%;
     z-index: 0;
 }
-.back__text {
+.text {
     position: absolute;
     background: aqua; 
     width: 100vw;   
 }
-.back__text__head {
+.headstick {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 80px;
     position: sticky;  
@@ -219,7 +219,7 @@
     color: blue;
 }
 
-.back__text__paragraph--nofloat,.back__text__paragraph {
+.paragraph--nofloat,.paragraph {
     font-size: 2em;
     font-family: 'Arial', sans-serif;
     color: black;
@@ -228,16 +228,17 @@
     display: block;
 }
 
-.back__text__paragraph__img--nofloat,.back__text__paragraph__img {
+.paragraph__img--nofloat,.paragraph__img {
     margin: 7px 7px 7px 0;
     width: 800px;
     height: 600px;
 }
-.back__text__paragraph__img {
+.paragraph__img {
     float: left;
 }
-.back__text__paragraph--nofloat,.back__text__paragraph__img--nofloat {
+.paragraph--nofloat,.paragraph__img--nofloat {
     clear: both;
+    float: none;
 }
 
 .cotton-style {
@@ -252,7 +253,7 @@
     color: red;
 }
 
-.back__about {
+.about {
     font-size: 20px;
     display: inline-block;
     width: 450px;
